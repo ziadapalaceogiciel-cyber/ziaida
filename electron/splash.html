@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; height: 100%; background: linear-gradient(135deg,#0E2A1D 0%,#123524 55%,#1B4531 100%); }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; color: #D8C072; gap: 16px; }
+  .title { font-size: 22px; letter-spacing: 4px; text-transform: uppercase; }
+  .msg { font-size: 14px; color: #7FA08D; }
+  .spinner { width: 32px; height: 32px; border: 3px solid rgba(216,192,114,.25); border-top-color: #D8C072; border-radius: 50%; animation: spin 0.9s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+  <div class="spinner"></div>
+  <div class="title">Ziada Palace PMS</div>
+  <div class="msg" id="msg">Connexion au serveur…</div>
+  <script>
+    if (window.__ZP_RETRY__) {
+      document.getElementById('msg').textContent = 'Connexion au serveur… nouvelle tentative';
+    }
+  </script>
+</body>
+</html>

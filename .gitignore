@@ -1,0 +1,12 @@
+.claude/
+node_modules/
+.env
+server/data/
+server/server.log
+electron/dist/
+electron/electron.log
+electron/dist-build.log
+tablet/android/app/build/
+tablet/android/.gradle/
+tablet/android/local.properties
+tablet/android/*.keystore

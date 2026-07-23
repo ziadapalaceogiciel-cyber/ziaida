@@ -1,0 +1,31 @@
+{
+  "name": "ziada-palace-pms-desktop",
+  "version": "1.0.0",
+  "description": "Ziada Palace PMS — application de bureau",
+  "author": "Ziada Palace & Spa",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^31.3.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "ma.ziadapalace.pms.desktop",
+    "productName": "Ziada Palace PMS",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "preload.js", "splash.html"],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
