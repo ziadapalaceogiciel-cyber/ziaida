@@ -1,9 +1,9 @@
 const { app, BrowserWindow, Menu } = require('electron');
 const path = require('path');
 
-// URL du serveur en ligne — jamais codée en dur : définie au build (ELECTRON_APP_URL)
-// ou en variable d'environnement au lancement. Fallback sur le serveur local de dev.
-const APP_URL = process.env.ELECTRON_APP_URL || 'http://localhost:3000';
+// URL du serveur en ligne — surchargeable via la variable d'environnement ELECTRON_APP_URL
+// (utile en développement), sinon pointe vers le serveur de production sur Render.
+const APP_URL = process.env.ELECTRON_APP_URL || 'https://ziaida.onrender.com';
 
 Menu.setApplicationMenu(null); // aucune barre de menu/navigateur visible
 
