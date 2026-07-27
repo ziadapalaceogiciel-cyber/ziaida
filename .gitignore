@@ -1,4 +1,5 @@
 .claude/
+backups/
 node_modules/
 .env
 server/data/
