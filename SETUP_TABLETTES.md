@@ -10,7 +10,7 @@ et l'installer (autoriser "sources inconnues" dans les réglages Android si dema
 ### Option simple — Épinglage d'écran (intégré à Android, aucun outil requis)
 
 1. Réglages → Sécurité → **Épinglage de l'écran** → Activer.
-2. Ouvrir l'app Ziada Palace Tablette.
+2. Ouvrir l'app Ziaida Palace Tablette.
 3. Appuyer sur le bouton "Aperçu des applications récentes", puis sur l'icône de l'app en
    haut → **Épingler**.
 4. La tablette reste bloquée sur l'app ; pour en sortir, il faut le mot de passe admin

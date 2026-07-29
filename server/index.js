@@ -118,7 +118,7 @@ app.get('/api/events', requireApiKey, (req, res) => {
 connect()
   .then(() => {
     app.listen(PORT, () => {
-      console.log(`Ziada Palace PMS server listening on http://localhost:${PORT}`);
+      console.log(`Ziaida Palace PMS server listening on http://localhost:${PORT}`);
     });
   })
   .catch(err => {

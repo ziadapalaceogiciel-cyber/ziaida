@@ -17,7 +17,7 @@ if (-not (Test-Path $BackupDir)) {
 }
 
 $timestamp = Get-Date -Format "yyyy-MM-dd_HHmmss"
-$outFile = Join-Path $BackupDir "ziada-backup-$timestamp.json"
+$outFile = Join-Path $BackupDir "ziaida-backup-$timestamp.json"
 
 try {
     Invoke-RestMethod -Uri $ApiUrl -Headers @{ "X-Api-Key" = $ApiKey } -OutFile $outFile -TimeoutSec 30
@@ -28,7 +28,7 @@ try {
 }
 
 # Garde uniquement les $MaxBackups sauvegardes les plus récentes pour ne pas remplir le disque.
-Get-ChildItem $BackupDir -Filter "ziada-backup-*.json" |
+Get-ChildItem $BackupDir -Filter "zia*da-backup-*.json" |
     Sort-Object LastWriteTime -Descending |
     Select-Object -Skip $MaxBackups |
     Remove-Item -Force

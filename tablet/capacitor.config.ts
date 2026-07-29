@@ -6,7 +6,7 @@ const APP_URL = process.env.CAPACITOR_APP_URL || 'https://ziaida.onrender.com';
 
 const config: CapacitorConfig = {
   appId: 'ma.ziadapalace.pms.tablet',
-  appName: 'Ziada Palace Tablette',
+  appName: 'Ziaida Palace Tablette',
   webDir: 'www',
   server: {
     url: APP_URL,

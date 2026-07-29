@@ -1,4 +1,4 @@
-# Déploiement en ligne — Ziada Palace PMS
+# Déploiement en ligne — Ziaida Palace PMS
 
 ## Prérequis
 
